@@ -1,0 +1,6 @@
+name = "Muslim"
+age = 24
+cgpa = 3.95
+print("Our new member name is :"+name)
+print("She is currently ", age,"years old")
+print(name+ "has scored ",cgpa, "in higher exam")
