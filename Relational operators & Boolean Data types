@@ -1,0 +1,8 @@
+#Relational operators & Boolean data types
+print(30>20)
+print(30<20)
+print(30>=20)
+print(30<=20)
+print(30==20)
+print(30!=20)
+print("Muslim"=="Muslim")
