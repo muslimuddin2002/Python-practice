@@ -1,0 +1,6 @@
+#while loop
+i=1            #initialization
+while i<=20:   #conditon
+    print(i)   #statements
+    i=i+1      #update
+print("program end")
