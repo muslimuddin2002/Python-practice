@@ -1,0 +1,8 @@
+#gcd & lcm
+import math
+a = int(input("Enter first number"))
+b = int(input("Enter second number"))
+gcd = math.gcd(a,b)    #gcd
+lcm = (a*b)//gcd       #lcm
+print(f"GCD  of {a} and {b} is {gcd}")
+print(f"LCM  of {a} and {b} is {lcm}")
