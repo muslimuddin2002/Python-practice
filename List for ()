@@ -1,0 +1,30 @@
+#List 
+subjects = ["c","c++","java","os","python","Android"]
+print(len(subjects)) # length()
+
+subjects.append("Toc") # append()
+print(subjects)
+
+subjects.insert(2,"html") #insert()
+print(subjects)
+
+subjects.sort()   #sort()
+print(subjects)
+
+subjects.reverse()  #reverse()
+print(subjects)
+
+subjects.remove("html")  #remove()
+print(subjects)
+
+subjects.pop()   #pop()
+print(subjects)
+
+pos = subjects.index("os") #index()
+print(pos)
+
+pos = subjects.count("java")  #count()
+print(pos)
+
+subjects.clear()  #clear()
+print(subjects)
