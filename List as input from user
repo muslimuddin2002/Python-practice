@@ -1,0 +1,15 @@
+numofWords = 0
+numofLetters = 0
+numofDigits = 0 
+text = input ("Enter a text of number : ")
+for x in text:
+    x = x.lower()
+    if x >= 'a' and x <= 'z':
+        numofLetters = numofLetters + 1
+    elif x>= '0' and x <= '9':
+        numofDigits = numofDigits + 1
+    elif x == ' ':
+        numofWords = numofWords +1
+print("Number of Letter: ",numofLetters)
+print("Number of Digits: ",numofDigits)
+print("Number of Words: ",numofWords+1)        
