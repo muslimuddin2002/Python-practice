@@ -1,0 +1,7 @@
+#Dictionaries
+StudentId = {
+    "101" : "Muslim uddin",
+    "102" : "KHADIJA KHATUN",
+    "103"  : "Hridoy"
+}
+print(StudentId.get("101","Not a valid key"))
