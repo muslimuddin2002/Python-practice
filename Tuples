@@ -1,0 +1,7 @@
+#Tuples
+Students = (
+    "Muslim uddin",
+    "Khadija khatun",
+    "Hridoy",
+)
+print(Students[0])
