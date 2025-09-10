@@ -1,0 +1,6 @@
+#Queue
+from collections import deque
+bank = deque(["Muslim","abc","def"])
+print(bank)
+bank.popleft()
+print(bank)
