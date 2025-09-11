@@ -1,0 +1,15 @@
+#user defined function
+def add(x,y):
+    sum = x+y
+    print(sum)
+
+def sub(x,y):
+      result = x-y
+      print(result)
+def message():
+     print("No perameter")
+add(20,30)
+sub(20,10)
+message()
+
+
