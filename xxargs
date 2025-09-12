@@ -1,0 +1,4 @@
+#xxargs
+def student(**details):
+    print(details ["name"])
+student(id = 1011,name = "Muslim")    
