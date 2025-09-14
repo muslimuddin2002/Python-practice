@@ -1,0 +1,38 @@
+# Students data
+students = [
+    {"name": "Rahim", "marks": 72},
+    {"name": "Karim", "marks": 85},
+    {"name": "Sadia", "marks": 91},
+    {"name": "Nafis", "marks": 60},
+    {"name": "Rumi", "marks": 45}
+]
+
+# 1. Name Uppercase 
+names = list(map(lambda s: s["name"].upper(), students))
+print("Uppercase Names:", names)
+
+# 2. name bonus add
+bonus_marks = list(map(lambda s: s["marks"] + 5, students))
+print("Marks after Bonus:", bonus_marks)
+
+# 3.  GPA  convert
+def marks_to_gpa(marks):
+    if marks >= 80:
+        return 4.0
+    elif marks >= 70:
+        return 3.5
+    elif marks >= 60:
+        return 3.0
+    elif marks >= 50:
+        return 2.5
+    else:
+        return 2.0
+
+gpas = list(map(lambda s: marks_to_gpa(s["marks"]), students))
+print("GPA List:", gpas)
+
+# 4. Students summary 
+summary = list(map(lambda s: f"{s['name']} scored {s['marks']} → GPA: {marks_to_gpa(s['marks'])}", students))
+print("\nStudent Summary:")
+for line in summary:
+    print(line)
