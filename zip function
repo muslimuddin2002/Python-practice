@@ -1,0 +1,4 @@
+#zip function
+roll = [101,102,103,104,105,106]
+name = ["Anisul islam","Muslim uddin","Hridoy","Bulbul","y","Malik"]
+print(list(zip(roll,name,"ABABAB")))
