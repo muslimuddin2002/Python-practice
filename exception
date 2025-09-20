@@ -1,0 +1,8 @@
+def vector (age):
+    if age <18:
+        raise ValueError ("Invalid voter")
+    return "ypu are allowed to vote"
+try:
+    print(voter(17))
+except ValueError as e:
+    print(e)   
