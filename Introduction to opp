@@ -1,0 +1,13 @@
+#Introduction to opp
+class student:
+    roll = ""
+    gpa = ""
+Muslim = student()
+Muslim.roll = 1011 
+Muslim.gpa = 3.85
+print(f"Roll : {Muslim.roll},GPA : {Muslim.gpa}")   
+
+Khadija = student()
+Khadija.roll = 1012 
+Khadija.gpa = 3.88
+print(f"Roll : {Khadija.roll},GPA : {Khadija.gpa}")   
