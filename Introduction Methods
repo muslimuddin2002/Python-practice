@@ -1,0 +1,16 @@
+#Introduction to methods
+class student:
+    roll = ""
+    gpa = ""
+    def set_value(self,roll,gpa):
+     self.roll = roll
+     self.gpa = gpa
+    def display(self):
+        print(f"Roll : {self.roll},GPA : {self.gpa}")     
+Muslim = student()
+Muslim.set_value(1011,3.85)
+Muslim.display()
+ 
+Khadija = student()
+Khadija.set_value(1011,3.85)
+Khadija.display()
