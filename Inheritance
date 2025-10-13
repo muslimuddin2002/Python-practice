@@ -1,0 +1,15 @@
+# Inheritance
+class phone:  #parent class
+    def call(self):
+        print("you can call")
+    def message(self):
+        print("you can message")
+class Samsung(phone):
+    #call,message
+    def photo(self):
+        print("you can take photo")
+s = Samsung()
+s.message()
+s.call()
+s.photo()
+print(issubclass(Samsung,phone))                   
