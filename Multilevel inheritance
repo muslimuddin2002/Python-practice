@@ -1,0 +1,19 @@
+class A:
+    def displayA(self):
+        print("I am inside A class")
+
+class B(A):   # B inherits from A
+    def displayB(self):
+        print("I am inside B class")
+
+class C(B):   # C inherits from B (and indirectly from A)
+    def displayC(self):
+        print("I am inside C class")
+
+# Object of class C
+ob1 = C()
+
+# Accessing methods from all parent classes
+ob1.displayA()   # From class A
+ob1.displayB()   # From class B
+ob1.displayC()   # From class C
