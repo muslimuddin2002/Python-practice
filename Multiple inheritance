@@ -1,0 +1,18 @@
+#Multiple inheritance
+
+class A:
+    def display(self):
+        print("I am inside A class")
+
+class B:
+    def display(self):
+        print("I am inside B class")
+
+class C(A, B):
+    def display(self):
+        super().display()   # Calls A’s display() because A is first in order
+        print("I am inside C class")
+
+ob1 = C()
+ob1.display()
+
