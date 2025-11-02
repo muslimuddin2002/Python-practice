@@ -1,0 +1,25 @@
+# Numpy practice
+import numpy as np
+
+# Create arrays
+a = np.array([1, 2, 3])
+print(a)
+
+b = np.array([[9.0, 8.0, 7.0],
+              [6.0, 5.0, 4.0]])
+print(b)
+
+# Get Dimension
+print("Dimension of a:", a.ndim)
+
+# Get Shape
+print("Shape of b:", b.shape)
+
+# Get Type
+print("Data type of a:", a.dtype)
+
+# Get item size (bytes per element)
+print("Item size of a:", a.itemsize)
+
+# Get total size (bytes)
+print("Total bytes of a:", a.nbytes)
