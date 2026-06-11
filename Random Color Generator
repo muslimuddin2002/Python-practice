@@ -1,0 +1,6 @@
+# Random Color Generator
+import random
+
+colors = ["Red", "Blue", "Green", "Black", "White"]
+
+print("Random Color:", random.choice(colors))
