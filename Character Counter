@@ -1,0 +1,4 @@
+# Character Counter
+text = input("Enter text: ")
+
+print("Total characters:", len(text))
