@@ -1,0 +1,10 @@
+# Find Minimum in List (manual)
+nums = [10, 50, 30, 80, 20]
+
+min_num = nums[0]
+
+for i in nums:
+    if i < min_num:
+        min_num = i
+
+print("Min:", min_num)
