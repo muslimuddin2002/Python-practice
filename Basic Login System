@@ -1,0 +1,12 @@
+# Basic Login System
+username = "MK Fundation"
+password = "2002+2004"
+
+u = input("Username: ")
+p = input("Password: ")
+
+if u == username and p == password:
+    print("Login Successful")
+
+else:
+    print("Wrong username or password")
