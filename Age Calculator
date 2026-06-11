@@ -1,0 +1,43 @@
+# Age Calculator
+from datetime import date
+from calendar import monthrange
+
+def calculate_age(birth_year, birth_month, birth_day):
+    today = date.today()  # LIVE system date (auto)
+
+    birth_date = date(birth_year, birth_month, birth_day)
+
+    years = today.year - birth_date.year
+    months = today.month - birth_date.month
+    days = today.day - birth_date.day
+
+    # If days negative → borrow days from previous month
+    if days < 0:
+        months -= 1
+
+        prev_month = today.month - 1
+        prev_year = today.year
+
+        if prev_month == 0:
+            prev_month = 12
+            prev_year -= 1
+
+        days += monthrange(prev_year, prev_month)[1]
+
+    # If months negative → borrow 12 months
+    if months < 0:
+        years -= 1
+        months += 12
+
+    return years, months, days
+
+
+# INPUT
+birth_year = int(input("Enter birth year: "))
+birth_month = int(input("Enter birth month: "))
+birth_day = int(input("Enter birth day: "))
+
+y, m, d = calculate_age(birth_year, birth_month, birth_day)
+
+print(f"\nYour Exact Age:")
+print(f"{y} Years, {m} Months, {d} Days")
