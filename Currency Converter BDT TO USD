@@ -1,0 +1,6 @@
+# Currency Converter
+bdt = float(input("Enter BDT: "))
+
+usd = bdt / 122
+
+print("USD:", usd)
