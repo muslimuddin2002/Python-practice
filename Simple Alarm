@@ -1,0 +1,8 @@
+# Simple Alarm
+import time
+
+seconds = int(input("Set time in seconds: "))
+
+time.sleep(seconds)
+
+print("Alarm! Time finished")
