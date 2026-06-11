@@ -1,0 +1,4 @@
+# Text to Uppercase
+text = input("Enter text: ")
+
+print(text.upper())
