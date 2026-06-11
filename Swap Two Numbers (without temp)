@@ -1,0 +1,8 @@
+# Swap Two Numbers (without temp)
+a = int(input("A: "))
+b = int(input("B: "))
+
+a, b = b, a
+
+print("After swap A =", a)
+print("After swap B =", b)
