@@ -1,0 +1,7 @@
+# Check Number Range
+num = int(input("Enter number: "))
+
+if 1 <= num <= 100:
+    print("Inside range")
+else:
+    print("Outside range")
