@@ -1,0 +1,6 @@
+# Count Specific Letter
+text = input("Enter text: ")
+
+ch = input("Which letter to count: ")
+
+print(text.count(ch))
