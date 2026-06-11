@@ -1,0 +1,6 @@
+# Username Generator
+name = input("Enter your name: ")
+
+username = name.lower() + "123"
+
+print("Username:", username)
