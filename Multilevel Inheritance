@@ -1,0 +1,24 @@
+# Multilevel Inheritance
+class GrandFather:
+
+    def land(self):
+        print("GrandFather has land")
+
+
+class Father(GrandFather):
+
+    def car(self):
+        print("Father has car")
+
+
+class Son(Father):
+
+    def bike(self):
+        print("Son has bike")
+
+
+s = Son()
+
+s.land()
+s.car()
+s.bike()
