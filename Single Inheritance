@@ -1,0 +1,14 @@
+# Single Inheritance
+class Father:
+
+    def house(self):
+        print("Father has a house")
+
+
+class Son(Father):
+    pass
+
+
+s = Son()
+
+s.house()
