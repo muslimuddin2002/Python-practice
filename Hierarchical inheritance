@@ -1,0 +1,22 @@
+# Hierarchical inheritance
+from os import chown
+class parent:
+  def property(self):
+    print("parent property")
+
+class child1(parent):
+  def bike(self):
+    print("child1 has bike")
+
+class child2(parent):
+  def car(self):
+    print("child2 has car")
+
+c1 = child1()
+c2 = child2()
+
+c1.property()
+c1.bike()
+
+c2.property()
+c2.car()
