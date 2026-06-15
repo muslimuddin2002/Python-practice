@@ -1,0 +1,6 @@
+# String Slicing
+# String এর নির্দিষ্ট অংশ বের করতে slicing ব্যবহার হয়।
+text = "Programming"
+
+print(text[0:6])
+print(text[3:8])
