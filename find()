@@ -1,0 +1,4 @@
+# find() কোন character বা word কোথায় আছে তা খুঁজে বের করে।
+text = "Python Programming"
+
+print(text.find("Program"))
