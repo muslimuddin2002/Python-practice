@@ -1,0 +1,4 @@
+# replace() একটি word এর জায়গায় অন্য word বসায়।
+text = "I love Java"
+
+print(text.replace("Java", "Python"))
