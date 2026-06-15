@@ -1,0 +1,4 @@
+# count() কতবার আছে তা গুনে।
+text = "apple"
+
+print(text.count("p"))
