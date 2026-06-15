@@ -1,0 +1,32 @@
+# Polymorphism with Classes
+# Class 1
+class Cat:
+
+    def sound(self):
+        print("Cat says Meow")
+
+    def move(self):
+        print("Cat walks silently")
+
+
+# Class 2
+class Dog:
+
+    def sound(self):
+        print("Dog says Bark")
+
+    def move(self):
+        print("Dog runs fast")
+
+
+# Object তৈরি
+cat1 = Cat()
+dog1 = Dog()
+
+
+# একই method call
+cat1.sound()
+dog1.sound()
+
+cat1.move()
+dog1.move()
