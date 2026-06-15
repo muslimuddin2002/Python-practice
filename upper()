@@ -1,0 +1,6 @@
+# Common String Methods
+# upper()
+# সব letter বড় হাতের করে।
+name = "python"
+
+print(name.upper())
