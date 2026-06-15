@@ -1,0 +1,4 @@
+# split() String কে list এ ভাগ করে।
+text = "Apple Mango Banana"
+
+print(text.split())
