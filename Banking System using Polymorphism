@@ -1,0 +1,84 @@
+# 🏦 Banking System using Polymorphism
+# ================= BASE CLASS =================
+class BankAccount:
+
+    def __init__(self, owner, balance):
+        self.owner = owner
+        self.balance = balance
+
+
+    # Common method
+    def deposit(self, amount):
+        self.balance += amount
+        print(f"{amount} টাকা জমা হয়েছে")
+
+
+    # Polymorphism method
+    def withdraw(self, amount):
+        pass
+
+
+    def show_balance(self):
+        print(f"বর্তমান ব্যালেন্স: {self.balance} টাকা")
+
+
+# ================= SAVINGS ACCOUNT =================
+class SavingsAccount(BankAccount):
+
+    def withdraw(self, amount):
+
+        if amount > self.balance:
+            print("পর্যাপ্ত ব্যালেন্স নেই")
+
+        else:
+            self.balance -= amount
+            print(f"{amount} টাকা Withdraw হয়েছে")
+
+
+# ================= CURRENT ACCOUNT =================
+class CurrentAccount(BankAccount):
+
+    def withdraw(self, amount):
+
+        # Overdraft সুবিধা
+        if amount > self.balance + 5000:
+            print("Overdraft limit শেষ")
+
+        else:
+            self.balance -= amount
+            print(f"{amount} টাকা Withdraw হয়েছে")
+
+
+# ================= STUDENT ACCOUNT =================
+class StudentAccount(BankAccount):
+
+    def withdraw(self, amount):
+
+        # Student account এ limit
+        if amount > 2000:
+            print("Student account এ ২০০০ টাকার বেশি তোলা যাবে না")
+
+        elif amount > self.balance:
+            print("পর্যাপ্ত ব্যালেন্স নেই")
+
+        else:
+            self.balance -= amount
+            print(f"{amount} টাকা Withdraw হয়েছে")
+
+
+# ================= OBJECT CREATION =================
+acc1 = SavingsAccount("Rahim", 10000)
+acc2 = CurrentAccount("Karim", 3000)
+acc3 = StudentAccount("Hasan", 5000)
+
+
+# ================= POLYMORPHISM =================
+accounts = [acc1, acc2, acc3]
+
+for acc in accounts:
+
+    print("\nAccount Owner:", acc.owner)
+
+    acc.withdraw(2500)
+
+    acc.show_balance()
