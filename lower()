@@ -1,0 +1,4 @@
+# lower() সব ছোট হাতের করে।
+name = "PYTHON"
+
+print(name.lower())
