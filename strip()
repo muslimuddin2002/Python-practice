@@ -1,0 +1,4 @@
+# strip() শুরুর ও শেষের extra space remove করে।
+text = "   Python   "
+
+print(text.strip())
