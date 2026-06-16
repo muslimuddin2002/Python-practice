@@ -1,0 +1,12 @@
+# Real Life Example 🔥
+# Student Information System
+student = (
+    "Muslim Uddin",
+    "CSE",
+    3.85,
+    "Bangladesh"
+)
+
+print("Name:", student[0])
+print("Department:", student[1])
+print("CGPA:", student[2])
