@@ -1,0 +1,11 @@
+# Real Life Example 🔥
+# Mobile Information System - Dictionary 
+mobile = {
+    "brand": "Samsung",
+    "model": "Galaxy S24",
+    "price": 120000,
+    "ram": "8GB"
+}
+
+print("Brand:", mobile["brand"])
+print("Price:", mobile["price"])
