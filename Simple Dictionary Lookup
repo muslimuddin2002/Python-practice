@@ -1,0 +1,13 @@
+# Simple Dictionary Lookup
+dictionary = {
+    "apple": "a fruit",
+    "book": "a thing to read",
+    "computer": "a machine"
+}
+
+word = input("Enter word: ")
+
+if word in dictionary:
+    print(dictionary[word])
+else:
+    print("Not found")
