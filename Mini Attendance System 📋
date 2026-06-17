@@ -1,0 +1,16 @@
+# Mini Attendance System 📋
+students = []
+
+while True:
+    name = input("Enter student name (or q): ")
+
+    if name == "q":
+        break
+
+    status = input("Present/Absent: ")
+
+    students.append((name, status))
+
+print("\n--- Attendance ---")
+for s in students:
+    print(s[0], "=>", s[1])
