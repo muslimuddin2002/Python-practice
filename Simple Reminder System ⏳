@@ -1,0 +1,9 @@
+# Simple Reminder System ⏳
+import time
+
+msg = input("Enter reminder message: ")
+sec = int(input("After how many seconds: "))
+
+time.sleep(sec)
+
+print("REMINDER:", msg)
