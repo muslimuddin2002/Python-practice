@@ -1,0 +1,10 @@
+# Text Statistics Tool 📊
+text = input("Enter text: ")
+
+letters = len(text.replace(" ", ""))
+words = len(text.split())
+sentences = text.count(".")
+
+print("Letters:", letters)
+print("Words:", words)
+print("Sentences:", sentences)
