@@ -1,0 +1,10 @@
+# Random Joke Generator 😄
+import random
+
+jokes = [
+    "Why programmers hate nature? Too many bugs 🐛",
+    "I told my computer I needed a break, it said no problem 😂",
+    "Why are Python developers calm? No semicolons 😆"
+]
+
+print(random.choice(jokes))
