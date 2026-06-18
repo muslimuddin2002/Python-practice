@@ -1,0 +1,83 @@
+# Hospital Management System
+
+class Patient:
+    def __init__(self, patient_id, name, age, disease):
+        self.patient_id = patient_id
+        self.name = name
+        self.age = age
+        self.disease = disease
+
+    def display(self):
+        print(f"ID: {self.patient_id}")
+        print(f"Name: {self.name}")
+        print(f"Age: {self.age}")
+        print(f"Disease: {self.disease}")
+        print("-" * 30)
+
+
+patients = []
+
+
+while True:
+    print("\n===== Hospital Management System =====")
+    print("1. Add Patient")
+    print("2. View Patients")
+    print("3. Search Patient")
+    print("4. Delete Patient")
+    print("5. Exit")
+
+    choice = input("Enter Choice: ")
+
+    if choice == "1":
+        patient_id = input("Patient ID: ")
+        name = input("Patient Name: ")
+        age = int(input("Age: "))
+        disease = input("Disease: ")
+
+        patient = Patient(patient_id, name, age, disease)
+        patients.append(patient)
+
+        print("Patient Added Successfully!")
+
+    elif choice == "2":
+        if len(patients) == 0:
+            print("No Patient Found!")
+        else:
+            for patient in patients:
+                patient.display()
+
+    elif choice == "3":
+        search_id = input("Enter Patient ID: ")
+
+        found = False
+
+        for patient in patients:
+            if patient.patient_id == search_id:
+                patient.display()
+                found = True
+                break
+
+        if not found:
+            print("Patient Not Found!")
+
+    elif choice == "4":
+        delete_id = input("Enter Patient ID to Delete: ")
+
+        found = False
+
+        for patient in patients:
+            if patient.patient_id == delete_id:
+                patients.remove(patient)
+                print("Patient Deleted Successfully!")
+                found = True
+                break
+
+        if not found:
+            print("Patient Not Found!")
+
+    elif choice == "5":
+        print("Thank You!")
+        break
+
+    else:
+        print("Invalid Choice!")
