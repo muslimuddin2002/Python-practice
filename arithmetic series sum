@@ -1,0 +1,9 @@
+# Arithmetic series sum
+def ap_sum(a, d, n):
+    return (n / 2) * (2 * a + (n - 1) * d)
+
+a = 2   # first term
+d = 3   # difference
+n = 5   # number of terms
+
+print("AP Sum:", ap_sum(a, d, n))
