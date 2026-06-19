@@ -1,0 +1,5 @@
+# Cubes sum
+def sum_cubes(n):
+    return (n * (n + 1) // 2) ** 2
+
+print(sum_cubes(5))
