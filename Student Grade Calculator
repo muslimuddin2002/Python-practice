@@ -1,0 +1,46 @@
+# ==========================================
+#       Student Grade Calculator
+# ==========================================
+
+print("=" * 40)
+print("       STUDENT GRADE CALCULATOR")
+print("=" * 40)
+
+# Taking marks as input
+subjects = ["Bangla", "English", "Math", "Physics", "CSE"]
+marks = []
+
+for subject in subjects:
+    mark = float(input(f"Enter {subject} marks: "))
+    marks.append(mark)
+
+# Calculate total and average
+total_marks = sum(marks)
+average = total_marks / len(subjects)
+
+# Calculate grade
+if average >= 80:
+    grade = "A+"
+elif average >= 70:
+    grade = "A"
+elif average >= 60:
+    grade = "A-"
+elif average >= 50:
+    grade = "B"
+elif average >= 40:
+    grade = "C"
+elif average >= 33:
+    grade = "D"
+else:
+    grade = "F"
+
+# Display result
+print("\n" + "=" * 40)
+print("           RESULT")
+print("=" * 40)
+
+print(f"Total Marks : {total_marks:.2f}")
+print(f"Average     : {average:.2f}")
+print(f"Grade       : {grade}")
+
+print("=" * 40)
